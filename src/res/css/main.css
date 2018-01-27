@@ -48,7 +48,7 @@ select {
 .notice div:last-child{width: 1.26rem;font-size: 0.2rem;box-sizing: border-box}
 .notice div:first-child img,.notice div:last-child img{width: 100%}
 .copyright{margin: 0.2rem 0;text-align: center;font-size: 0.2rem}
-.copyright.fixed{position: fixed;bottom: 1.2rem;width: 100%}
+.copyright.fixed{position: fixed;bottom: 1rem;width: 100%}
 #footer{height: 0.98rem;position: fixed;bottom: 0;width: 100%;line-height: 0.98rem}
 #footer li{text-align: center;width: 33.3%;background: #eeeeee;border: 0.01rem solid #d9d9d9;border-right: 0;box-sizing: border-box;border-bottom: 0;font-size: 0.3rem;}
 #footer li i{font-size: 0.34rem;margin-right: 0.1rem}
@@ -56,3 +56,29 @@ select {
 #footer li:first-child{border-left: 0;}
 #footer li a{color: #000000}
 #footer li.active a{color: #fc5643}
+
+
+/*home*/
+.groupBox{padding: 0 0.3rem;border-bottom:0.01rem solid #d9d9d9}
+.groupBox .title{font-size: 0.32rem;text-align: center;margin: 0.2rem}
+.groupBox .top li{width: 3.4rem;margin-right: 0.1rem;}
+.groupBox .top li img,.groupBox .bottom li img{width: 100%;box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-webkit-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-moz-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) }
+.groupBox .top li p,.groupBox .bottom li p{font-size: 0.2rem;margin: 0.2rem 0;text-align: center}
+.groupBox .top li:nth-child(2n),.groupBox .bottom li:nth-child(3n){margin-right:0}
+.groupBox .bottom li{width:2.23rem;margin-right: 0.1rem;}
+.group2 .top li{width: 100%;margin-bottom: 0.2rem}
+.group4 .top{box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-webkit-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-moz-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;margin-bottom: 0.2rem}
+.group4 .top li{width: 1.15rem;height: 0.78rem;background: #fff;text-align: center;line-height: 0.78rem;margin-right: 0;border-right: 0.01rem solid #d9d9d9;box-sizing: border-box}
+.group4 .top li.active{color: #fff;background: #fd4e3b}
+.group4 .bottom ul{width: 100%;padding: 0 0.3rem;box-sizing: border-box;background: #fff;border:0.01rem solid #bcbcbc;border-radius: 0.08rem;overflow: hidden;}
+.group4 .bottom li{width: 100%;height: 0.8rem;line-height: 0.8rem;border-bottom: 0.02rem dashed #bcbcbc;font-size: 0.26rem;display: flex;-webkit-align-items: center;align-items: center;}
+.group4 .bottom li:last-child{border-bottom: 0;}
+.group4 .bottom li div:first-child{color: #000000;margin-right: 0.2rem;width: 1.2rem}
+.group4 .bottom li div:nth-child(2){color: #666666;font-size: 0.22rem;width: 4rem}
+.group4 .bottom li div:nth-child(3){color: #000000;font-size: 0.22rem;border: 0.01rem solid #fd4e3b;height: 0.36rem;width: 0.86rem;text-align: center;line-height: 0.36rem;}
+.group4{border-bottom: 0;margin-bottom: 0.6rem}
+/*order*/
+#nav{width: 100%;background: #fff;box-shadow: 0 4px 10px rgba(51,51,51,0.2) ;-webkit-box-shadow: 0 4px 10px rgba(51,51,51,0.2) ;-moz-box-shadow: 0 4px 10px rgba(51,51,51,0.2)}
+#nav li{width: 33.3%;text-align: center;height: 0.65rem;line-height: 0.65rem;font-size: 0.26rem;border-right: 0.01rem solid #dedede;box-sizing: border-box}
+#nav li:last-child{border-right: 0}
+#nav li.active{border-bottom: 0.04rem solid #ff9d14;margin-bottom: -0.04rem;}

@@ -146,10 +146,12 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
-    var h=document.body.clientHeight,
-        h1=document.body.scrollHeight;
-    if(h>=h1){
-        $('.copyright').addClass('.fixed');
+    window.onload=function(){
+        var h = window.screen.height,
+                h1 = document.body.clientHeight ;
+        if (h >= h1) {
+            $('.copyright').addClass('fixed');
+        }
     }
 </script>
 </body>
