@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--移动设备-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport"
+          content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel="stylesheet" href="../res/css/H-ui.reset.css"/>
+    <link rel="stylesheet" href="../res/js/need/layer.css"/>
+    <link rel="stylesheet" href="../res/css/main.css"/>
+    <script src="../res/js/jquery-1.10.2.js"></script>
+    <script src="../res/js/layer.js"></script>
+    <title></title>
+    <style>.layui-m-layer1 .layui-m-layercont{padding: 0.3rem;padding-top: 0}</style>
+</head>
+<body class="frontFlow">
+<div class="top cl">
+        <img src="../res/img/banner1.jpg" alt="" width="100%"/>
+</div>
+<div class="illustrate">
+    <div class="title">
+        <p>爱奇艺VIP黄金会员</p>
+        <p><span>￥20.00</span><span>市场价：￥20.00</span></p>
+    </div>
+    <div class="content">
+        国内LTE 4G无线数据上网业务，国内、国际、港澳台语音通话业务，国际、港澳台漫游数据业务、增值业务。
+        （一）移动业务产品：4G全国套餐、4G畅爽冰激凌流量不限量套餐、流量王套餐、校园套餐、本地个性化套餐、日租卡、线上自由组合套餐，还有流量日包、月包、半年包系列的流量包和语音月包等产品。
+        1、4G畅爽冰激凌不限量套餐：率先推出4G不限量套餐，国内语音、流量不限量，以“匠心网络”为用户提供高质量的网络服务，开启“无限流量”新时代。中国联通采用世界先进的LTE-FDD技术，网络覆盖良好率突破97%，峰值下行速率超过300Mbps，高铁实现连续覆盖，为用户提供了更加完善的4G网络，让用户感受语音、视频的极致体验。
+        2、流量日租卡：创新推出流量日租卡套餐，流量按天算，个性化设置1天1元200-500MB流量不等，每天不用流量不花钱，电话接听全国免费，国内语音通话一口价，取消国内长途和漫游费，直接解决流量刚需，助力互联网+，支持双创。
+        3、流量王套餐、校园套餐、本地个性化套餐，面向不同用户群体，套餐设置灵活，满足用户个性化，多样性需求，线上自由组合套餐，用户随心定制，自由设置业务组合和套餐月费。
+        （二）港澳台、国际漫游数据自动升级套餐。
+        根据漫游地不同，数据漫游资费5元/5MB或5元/3MB，每天使用流量25元或55元费用封顶，流量不限量，用户无需订购自动升级，用户无忧漫游，放心使用。
+    </div>
+</div>
+<div style="height: 1.08rem"></div>
+<div class="footer">
+    <ul class="clearfix">
+        <li class="l price">支付 <span>￥20.00</span></li>
+        <li class="l order" onclick="order()">购买</li>
+    </ul>
+</div>
+<script>
+    //rem
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    $('.list').click(function () {
+        $(this).addClass('active');
+        $('.list').not(this).removeClass('active')
+    });
+    //layer弹窗
+    function order() {
+        layer.open({
+            title: [
+                '订购',
+                'background-color: #ffd225; color:#1f0200;height:0.6rem;line-height:0.6rem;font-size:0.28rem'
+            ],
+            type:1,
+            style: 'width: 6.3rem;border-radius:0.08rem'
+            , content: '<div class="layerContent"><div style="margin: 0.26rem auto;text-align: center;width: 5rem;font-size: 0.26rem">30元11GB组合流量包资费：30元/次 <br/><span class="price">￥12.00</span> </div><div class="formBox"><div><input type="text" class="tel" placeholder="请输入山东联通手机号"/></div></div><button class="orderBtn" onclick="orderSub()">确定购买</button></div>'
+        });
+    }
+</script>
+</body>
+</html>
