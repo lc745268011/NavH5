@@ -97,3 +97,12 @@ select {
 .group5 ul li div.price div:last-child span{font-size: 0.24rem;color: #fe931a}
 .group5 ul li div.price div:last-child del{font-size: 0.20rem;color: #bcbcbc;margin-left: 0.2rem}
 .group5 ul li div.buy img{width: 0.8rem;margin-left: 0.3rem}
+.layerContent{text-align: center}
+.formBox{width: 5.4rem;margin: 0 auto}
+.formBox>div{width: 5.4rem;height: 0.6rem;margin-bottom: 0.16rem;border-radius: 0.08rem;overflow: hidden}
+.formBox>div input{width: 5.4rem;height: 0.6rem;border: 0;background: #f5f5f5;font-size: 0.24rem;-webkit-appearance:none;outline:none;border-radius: 0}
+.formBox .tel{width: 5.4rem;height: 0.6rem;padding: 0 0.3rem;box-sizing: border-box}
+.formBox .code{width:3.9rem;height: 0.6rem;padding: 0 0.3rem;box-sizing: border-box}
+.formBox .obtain{width:1.5rem;height: 0.6rem;padding: 0;box-sizing: border-box;color: #fff;background: #71b457;font-size: 0.24rem;border: 0;text-align: center;}
+.orderBtn{width:1.5rem ;height: 0.5rem;line-height: 0.5rem;font-size: 0.24rem;color: #fff;border: 0;background: #e94d40;border-radius: 0.3rem;margin-top: 0.16rem}
+.layerContent .price{color: #e94d40;font-size: 0.3rem;display: block;font-weight: bold;margin-top: 0.2rem}
