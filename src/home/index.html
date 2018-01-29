@@ -102,31 +102,31 @@
     <p class="title">流量充值</p>
     <div class="top">
         <ul>
-            <li class="active">
+            <li class="active" onclick="tab(this)">
                 1G
             </li>
-            <li>
+            <li onclick="tab(this)">
                 2G
             </li>
-            <li>
+            <li onclick="tab(this)">
                 3G
             </li>
-            <li>
+            <li onclick="tab(this)">
                 3G
             </li>
-            <li>
+            <li onclick="tab(this)">
                 3G
             </li>
-            <li>
+            <li onclick="tab(this)">
                 3G
             </li>
-            <li>
+            <li onclick="tab(this)">
                 6G
             </li>
-            <li>
+            <li onclick="tab(this)">
                7G
             </li>
-            <li>
+            <li onclick="tab(this)">
                 8G
             </li>
         </ul>
@@ -182,7 +182,7 @@
         if (h >= h1) {
             $('.copyright').addClass('fixed');
         }
-    }
+    };
     //layer弹窗
     function order() {
         layer.open({
@@ -194,6 +194,11 @@
             style: 'width: 6.3rem;border-radius:0.08rem'
             , content: '<div class="layerContent"><div style="margin: 0.26rem auto;text-align: center;width: 5rem;font-size: 0.26rem">30元11GB组合流量包资费：30元/次 <br/><span class="price">￥12.00</span> </div><div class="formBox"><div><input type="text" class="tel" placeholder="请输入山东联通手机号"/></div></div><button class="orderBtn" onclick="orderSub()">确定购买</button></div>'
         });
+    };
+//    tab切换
+    function tab(obj){
+        $('.group4 .top li').removeClass('active');
+        $(obj).addClass('active')
     }
 </script>
 </body>
