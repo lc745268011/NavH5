@@ -67,10 +67,12 @@ select {
 .groupBox .title{font-size: 0.32rem;text-align: center;margin: 0.2rem}
 .groupBox .top li{width: 3.4rem;margin-right: 0.1rem;}
 .groupBox .top li img,.groupBox .bottom li img{width: 100%;box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-webkit-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-moz-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) }
-.groupBox .top li p,.groupBox .bottom li p{font-size: 0.2rem;margin: 0.2rem 0;text-align: center}
+.groupBox .top li p,.groupBox .bottom li p{font-size: 0.2rem;margin: 0.2rem 0;text-align: center;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
 .groupBox .top li:nth-child(2n),.groupBox .bottom li:nth-child(3n){margin-right:0}
 .groupBox .bottom li{width:2.23rem;margin-right: 0.1rem;}
 .group2 .top li{width: 100%;margin-bottom: 0.2rem}
+.group3 .bottom ul{display: flex;overflow-x: auto;}
+.group3 .bottom ul li{min-width: 2.23rem;flex: 1;margin-right: 0.1rem!important;}
 .group4 .top{box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-webkit-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;-moz-box-shadow: 4px 4px 10px rgba(51,51,51,0.5) ;margin-bottom: 0.2rem}
 .group4 .top li{min-width: 1.15rem;height: 0.78rem;background: #fff;text-align: center;line-height: 0.78rem;margin-right: 0;border-right: 0.01rem solid #d9d9d9;box-sizing: border-box;flex: 1;}
 .group4 .top li.active{color: #fff;background: #fd4e3b}
@@ -83,7 +85,7 @@ select {
 .group4 .bottom li div:nth-child(3){color: #000000;font-size: 0.22rem;border: 0.01rem solid #fd4e3b;height: 0.36rem;width: 0.86rem;text-align: center;line-height: 0.36rem;}
 .group4{border-bottom: 0;margin-bottom: 0.6rem}
 .group4 .top ul{display: flex;overflow-x: auto;}
-.group4 .top ul::-webkit-scrollbar{display: none}
+.group4 .top ul::-webkit-scrollbar,.group3 .bottom ul::-webkit-scrollbar{display: none}
 /*order*/
 #nav{width: 100%;background: #fff;box-shadow: 0 4px 10px rgba(51,51,51,0.2) ;-webkit-box-shadow: 0 4px 10px rgba(51,51,51,0.2) ;-moz-box-shadow: 0 4px 10px rgba(51,51,51,0.2)}
 #nav li{width: 33.3%;text-align: center;height: 0.65rem;line-height: 0.65rem;font-size: 0.26rem;border-right: 0.01rem solid #dedede;box-sizing: border-box}
