@@ -35,65 +35,70 @@
         </li>
     </ul>
 </div>
-<div class="groupBox group5">
-    <p class="title">流量视频组合包</p>
-    <ul>
-        <li>
-            <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
-            <div class="price">
-                <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
-                <div><span>24.00元</span><del>48.00元</del></div>
-            </div>
-            <div class="buy">
-                <a href="detail.html">
-                    <img src="../res/img/buy.png" alt=""/>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
-            <div class="price">
-                <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
-                <div><span>24.00元</span><del>48.00元</del></div>
-            </div>
-            <div class="buy">
-                <a href="detail.html">
-                    <img src="../res/img/buy.png" alt=""/>
-                </a>
-            </div>
-        </li>
-    </ul>
+<div style="display: none">
+    <div class="groupBox group5">
+        <p class="title">流量视频组合包</p>
+        <ul>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+        </ul>
 
+    </div>
+    <div class="groupBox group5">
+        <p class="title">视频会员</p>
+        <ul>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
 </div>
-<div class="groupBox group5">
-    <p class="title">视频会员</p>
-    <ul>
-        <li>
-            <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
-            <div class="price">
-                <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
-                <div><span>24.00元</span><del>48.00元</del></div>
-            </div>
-            <div class="buy">
-                <a href="detail.html">
-                    <img src="../res/img/buy.png" alt=""/>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
-            <div class="price">
-                <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
-                <div><span>24.00元</span><del>48.00元</del></div>
-            </div>
-            <div class="buy">
-                <a href="detail.html">
-                    <img src="../res/img/buy.png" alt=""/>
-                </a>
-            </div>
-        </li>
-    </ul>
-
+<div class="noData">
+    暂无数据
 </div>
 <div class="copyright">
     <p>山东联通版权所有</p>
@@ -127,7 +132,8 @@
         if (h >= h1) {
             $('.copyright').addClass('fixed');
         }
-    }
+        $('.noData').height(h-$('#banner').height()-$('#nav').height()-$('#footer').height()-$('.copyright').height()-20-64);
+    };
     //    tab切换
     function tab(obj){
         $('#nav li').removeClass('active');
