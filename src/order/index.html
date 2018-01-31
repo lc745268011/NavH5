@@ -24,13 +24,13 @@
 </div>
 <div id="nav">
     <ul class="cl">
-        <li class="l active">
+        <li class="l active" onclick="tab(this)">
             <i class="iconfont">&#xe78f;</i>视频
         </li>
-        <li class="l">
+        <li class="l" onclick="tab(this)">
             <i class="iconfont">&#xe61f;</i>声讯
         </li>
-        <li class="l">
+        <li class="l" onclick="tab(this)">
             <i class="iconfont">&#xe634;</i>阅读
         </li>
     </ul>
@@ -127,6 +127,11 @@
         if (h >= h1) {
             $('.copyright').addClass('fixed');
         }
+    }
+    //    tab切换
+    function tab(obj){
+        $('#nav li').removeClass('active');
+        $(obj).addClass('active')
     }
 </script>
 </body>
