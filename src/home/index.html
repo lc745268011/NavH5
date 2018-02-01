@@ -143,17 +143,18 @@
         <ul class="cl">
             <li class="l cl">
                 <div class="l">30.00元</div>
-                <div class="l">省内流量 当月有效</div>
+                <div class="l info">省内流量 当月有效</div>
+                <div class="r hot">特惠日包</div>
                 <div class="r" onclick="order()">购买</div>
             </li>
             <li class="l cl">
                 <div class="l">30.00元</div>
-                <div class="l">省内流量 当月有效</div>
+                <div class="l info">省内流量 当月有效</div>
                 <div class="r" onclick="order()">购买</div>
             </li>
             <li class="l cl">
                 <div class="l">300.00元</div>
-                <div class="l">省内流量 当月有效</div>
+                <div class="l info">省内流量 当月有效</div>
                 <div class="r" onclick="order()">购买</div>
             </li>
         </ul>
@@ -207,6 +208,9 @@
     function tab(obj){
         $('.group4 .top li').removeClass('active');
         $(obj).addClass('active')
+    }
+    if($('.group4 .bottom').find('hot')){
+        $('.hot').siblings('.info').css('width','2.4rem')
     }
 </script>
 </body>

@@ -82,7 +82,8 @@ select {
 .group4 .bottom li:last-child{border-bottom: 0;}
 .group4 .bottom li div:first-child{color: #000000;margin-right: 0.2rem;width: 1.2rem}
 .group4 .bottom li div:nth-child(2){color: #666666;font-size: 0.22rem;width: 4rem}
-.group4 .bottom li div:nth-child(3){color: #000000;font-size: 0.22rem;border: 0.01rem solid #fd4e3b;height: 0.36rem;width: 0.86rem;text-align: center;line-height: 0.36rem;}
+.group4 .bottom li div:last-child{color: #000000;font-size: 0.22rem;border: 0.01rem solid #fd4e3b;height: 0.36rem;width: 0.86rem;text-align: center;line-height: 0.36rem;}
+.group4 .bottom li div.hot{height: 0.36rem;margin-right: 0.4rem;width: 1.2rem;font-size: 0.2rem;color: #fff;text-align: center;background: #fd4e3b;line-height: 0.36rem;border-radius: 0.16rem}
 .group4{border-bottom: 0;margin-bottom: 0.6rem}
 .group4 .top ul{display: flex;overflow-x: auto;}
 .group4 .top ul::-webkit-scrollbar,.group3 .bottom ul::-webkit-scrollbar{display: none}
