@@ -11,16 +11,29 @@
     <meta name="viewport"
           content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
     <link rel="stylesheet" href="../res/css/H-ui.reset.css"/>
+    <link rel="stylesheet" href="../res/css/swiper.min.css"/>
     <link rel="stylesheet" href="../res/js/need/layer.css"/>
     <link rel="stylesheet" href="../res/css/main.css"/>
     <script src="../res/js/jquery-1.10.2.js"></script>
     <script src="../res/js/layer.js"></script>
     <title></title>
-    <style>.layui-m-layer1 .layui-m-layercont{padding: 0.3rem;padding-top: 0}</style>
+    <style>
+        .layui-m-layer1 .layui-m-layercont{padding: 0.3rem;padding-top: 0}
+        .swiper-container-horizontal>.swiper-pagination-bullets{bottom: 0}
+        .swiper-pagination-bullet-active {background: #000;}
+    </style>
 </head>
 <body style="background-color: #f5f5f5">
 <div id="banner">
-    <img src="../res/img/banner1.jpg" alt=""/>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../res/img/banner1.jpg" alt=""/></div>
+            <div class="swiper-slide"><img src="../res/img/banner1.jpg" alt=""/></div>
+            <div class="swiper-slide"><img src="../res/img/banner1.jpg" alt=""/></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
 </div>
 <div class="groupBox group1">
     <p class="title">视频专区</p>
@@ -213,5 +226,19 @@
         $('.hot').siblings('.info').css('width','2.4rem')
     }
 </script>
+<!-- Swiper JS -->
+<script src="../res/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        centeredSlides: true,
+        autoplay: 200500,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+
 </body>
 </html>
