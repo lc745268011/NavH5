@@ -96,6 +96,7 @@ select {
 .group5{border-bottom: 0}
 .group5 ul li{display: flex;display: -webkit-box;display: -moz-box;display: -webkit-flex;-webkit-box-align: center;-moz-box-align: center; -ms-flex-align: center;-webkit-align-items: center;align-items: center; width: 100%;background: #fff;border: 0.01rem solid #bcbcbc;padding: 0.2rem 0.3rem;box-sizing: border-box;border-radius: 0.08rem;margin-bottom: 0.2rem ;box-shadow: 0 4px 10px rgba(51,51,51,0.3) ;-webkit-box-shadow: 0 4px 10px rgba(51,51,51,0.3) ;-moz-box-shadow: 0 4px 10px rgba(51,51,51,0.3)}
 .group5 ul li div.logo img{width: 0.9rem;margin-right: 0.3rem}
+.group5 ul li div.price{width: 4rem}
 .group5 ul li div.price div:first-child{font-size: 0.24rem;}
 .group5 ul li div.price div:last-child span{font-size: 0.24rem;color: #fe931a}
 .group5 ul li div.price div:last-child del{font-size: 0.20rem;color: #bcbcbc;margin-left: 0.2rem}

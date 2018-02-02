@@ -16,7 +16,7 @@
     <script src="../res/js/jquery-1.10.2.js"></script>
     <script src="../res/js/layer.js"></script>
     <title></title>
-    <style>.layui-m-layer1 .layui-m-layercont{padding: 0.3rem;padding-top: 0}</style>
+    <style>.layui-m-layer1 .layui-m-layercont{padding: 0.3rem;padding-top: 0}.layui-m-layerchild{position: relative}.close{position: absolute;top: -0.2rem;right: -0.2rem}.close img{width: 0.5rem}</style>
 </head>
 <body class="frontFlow">
 <div class="top cl">
@@ -70,8 +70,9 @@
                 'background-color: #ffd225; color:#1f0200;height:0.6rem;line-height:0.6rem;font-size:0.28rem'
             ],
             type:1,
+            shadeClose:false,
             style: 'width: 6.3rem;border-radius:0.08rem'
-            , content: '<div class="layerContent"><div style="margin: 0.26rem auto;text-align: center;width: 5rem;font-size: 0.26rem">30元11GB组合流量包资费：30元/次 <br/><span class="price">￥12.00</span> </div><div class="formBox"><div><input type="text" class="tel" placeholder="请输入山东联通手机号"/></div></div><button class="orderBtn" onclick="orderSub()">确定购买</button></div>'
+            , content: '<div class="close" onclick="layer.closeAll()"><img src="../res/img/close.png" alt=""/></div><div class="layerContent"><div style="margin: 0.26rem auto;text-align: center;width: 5rem;font-size: 0.26rem">30元11GB组合流量包资费：30元/次 <br/><span class="price">￥12.00</span> </div><div class="formBox"><div><input type="text" class="tel" placeholder="请输入山东联通手机号"/></div></div><button class="orderBtn" onclick="orderSub()">确定购买</button></div>'
         });
     }
 </script>
