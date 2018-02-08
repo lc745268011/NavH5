@@ -98,8 +98,11 @@
     <div class="bottom">
         <ul class="cl">
             <li class="l">
-                <img src="../res/img/list2.jpg" alt=""/>
-                <p>【7天】腾讯视频<br/>VIP+省内1G月流量包=19元</p>
+                <a href="">
+                    <img src="../res/img/list2.jpg" alt=""/>
+
+                    <p>【7天】腾讯视频<br/>VIP+省内1G月流量包=19元</p>
+                </a>
             </li>
             <li class="l">
                 <img src="../res/img/list2.jpg" alt=""/>
@@ -122,9 +125,10 @@
 </div>
 <div class="groupBox group4">
     <p class="title">流量充值</p>
-    <div class="top">
+    <div class="top" id="J_container" style="width: 6.9rem;  overflow-x: scroll;
+    overflow-y: hidden;">
         <ul>
-            <li class="active" onclick="tab(this)">
+            <li onclick="tab(this)">
                 1G
             </li>
             <li onclick="tab(this)">
@@ -139,14 +143,14 @@
             <li onclick="tab(this)">
                 3G
             </li>
-            <li onclick="tab(this)">
+            <li onclick="tab(this)" class="active">
                 3G
             </li>
             <li onclick="tab(this)">
                 6G
             </li>
             <li onclick="tab(this)">
-               7G
+                7G
             </li>
             <li onclick="tab(this)">
                 8G
@@ -199,12 +203,20 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
-    window.onload=function(){
+    window.onload = function () {
         var h = window.screen.height,
-            h1 = document.body.clientHeight ;
+            h1 = document.body.clientHeight;
         if (h >= h1) {
             $('.copyright').addClass('fixed');
+        }else{
+            $('.copyright').removeClass('fixed');
         }
+        var item = $(".active");
+        var container = $("#J_container");
+        var itemOffset = item.offset();
+        var itemOffsetLeft = itemOffset.left + container.scrollLeft();
+        var centerLeft = ( container.width() - item.width()) / 2;
+        container.scrollLeft(itemOffsetLeft - centerLeft);
     };
     //layer弹窗
     function order() {
@@ -213,19 +225,28 @@
                 '订购',
                 'background-color: #ffd225; color:#1f0200;height:0.6rem;line-height:0.6rem;font-size:0.28rem'
             ],
-            type:1,
-            shadeClose:false,
+            type: 1,
+            shadeClose: false,
             style: 'width: 6.3rem;border-radius:0.08rem'
-            , content: '<div class="close" onclick="layer.closeAll()"><img src="../res/img/close.png" alt=""/></div><div class="layerContent"><div style="margin: 0.26rem auto;text-align: center;width: 5rem;font-size: 0.26rem">30元11GB组合流量包资费：30元/次 <br/><span class="price">￥12.00</span> </div><div class="formBox"><div><input type="text" class="tel" placeholder="请输入山东联通手机号"/></div></div><button class="orderBtn" onclick="orderSub()">确定购买</button></div>'
+            ,
+            content: '<div class="close" onclick="layer.closeAll()"><img src="../res/img/close.png" alt=""/></div><div class="layerContent"><div style="margin: 0.26rem auto;text-align: center;width: 5rem;font-size: 0.26rem">30元11GB组合流量包资费：30元/次 <br/><span class="price">￥12.00</span> </div><div class="formBox"><div><input type="text" class="tel" placeholder="请输入山东联通手机号"/></div></div><button class="orderBtn" onclick="orderSub()">确定购买</button></div>'
         });
-    };
-//    tab切换
-    function tab(obj){
-        $('.group4 .top li').removeClass('active');
-        $(obj).addClass('active')
     }
-    if($('.group4 .bottom').find('hot')){
-        $('.hot').siblings('.info').css('width','2.4rem')
+    ;
+    //    tab切换
+    function tab(obj) {
+        $('.group4 .top li').removeClass('active');
+        $(obj).addClass('active');
+        var item = $(".active");
+        var container = $("#J_container");
+        var itemOffset = item.offset();
+        var itemOffsetLeft = itemOffset.left + container.scrollLeft();
+        var centerLeft = ( container.width() - item.width()) / 2;
+        container.animate({scrollLeft:itemOffsetLeft - centerLeft},500);
+//        container.scrollLeft(itemOffsetLeft - centerLeft);
+    }
+    if ($('.group4 .bottom').find('hot')) {
+        $('.hot').siblings('.info').css('width', '2.4rem')
     }
 </script>
 <!-- Swiper JS -->

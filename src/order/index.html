@@ -16,14 +16,14 @@
     <script src="../res/js/jquery-1.10.2.js"></script>
     <script src="../res/js/layer.js"></script>
     <title></title>
-    <style>.layui-m-layer1 .layui-m-layercont{padding: 0.3rem;padding-top: 0}</style>
+    <style>.layui-m-layer1 .layui-m-layercont{padding: 0.3rem;padding-top: 0}.aa{display: none}.aa.active{display: block}</style>
 </head>
 <body style="background-color: #f5f5f5">
 <div id="banner">
     <img src="../res/img/banner2.jpg" alt=""/>
 </div>
 <div id="nav">
-    <ul class="cl">
+    <ul class="cl" id="bb">
         <li class="l active" onclick="tab(this)">
             <i class="iconfont">&#xe78f;</i>视频
         </li>
@@ -35,9 +35,107 @@
         </li>
     </ul>
 </div>
-<div>
+<div class="aa active">
     <div class="groupBox group5">
-        <p class="title">流量视频组合包</p>
+        <p class="title">流量视频组合包1</p>
+        <ul>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="groupBox group5">
+        <p class="title">视频会员</p>
+        <ul>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
+                <div class="price">
+                    <div>山东联通6G省内流量7天包+优酷视频VIP【7天】</div>
+                    <div><span>24.00元</span><del>48.00元</del></div>
+                </div>
+                <div class="buy">
+                    <a href="detail.html">
+                        <img src="../res/img/buy.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="aa">
+    <div class="groupBox group5">
+        <p class="title">流量视频组合包2</p>
         <ul>
             <li>
                 <div class="logo"><img src="../res/img/p-logo.png" alt=""/></div>
@@ -97,6 +195,9 @@
 
     </div>
 </div>
+<div class="aa">
+   敬请期待
+</div>
 <div class="noData" style="display: none">
     暂无数据
 </div>
@@ -126,19 +227,48 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
-    window.onload = function () {
-        var h = window.screen.height,
+ window.onload = function () {
+     console.log(1)
+    /* var h = window.screen.height,
                 h1 = document.body.clientHeight;
         if (h >= h1) {
             $('.copyright').addClass('fixed');
         }
-        $('.noData').height(h-$('#banner').height()-$('#nav').height()-$('#footer').height()-$('.copyright').height()-20-64);
+        $('.noData').height(h-$('#banner').height()-$('#nav').height()-$('#footer').height()-$('.copyright').height()-20-64);*/
     };
     //    tab切换
-    function tab(obj){
-        $('#nav li').removeClass('active');
-        $(obj).addClass('active')
-    }
+//    function tab(obj){
+//        $('#nav li').removeClass('active');
+//        $(obj).addClass('active');
+        var tabs=document.getElementById("bb").getElementsByTagName("li");
+        var divs=document.getElementsByClassName("aa");
+        for(var i=0;i<tabs.length;i++){
+            tabs[i].onclick=function(){tab(this);}
+        }
+        function tab(obj){
+
+            for(var i=0;i<tabs.length;i++)
+            {
+                if(tabs[i]==obj){
+                    tabs[i].className="l active";
+                    divs[i].className="aa active";
+                }
+                else{
+                    tabs[i].className="l";
+                    divs[i].className="aa";
+                }
+            }
+            var h = window.screen.height,
+                    h1 = document.body.clientHeight;
+            if (h >= h1) {
+                $('.copyright').addClass('fixed');
+            }else{
+                $('.copyright').removeClass('fixed');
+            }
+            $('.noData').height(h-$('#banner').height()-$('#nav').height()-$('#footer').height()-$('.copyright').height()-20-64);
+        }
+
+//    }
 </script>
 </body>
 </html>
